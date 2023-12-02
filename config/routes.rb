@@ -11,6 +11,9 @@
 Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
+  # get 'homepage/index'
+  root 'homepage#index'
+
   # resources :score_categories
   # resources :users
   # resources :score_items
