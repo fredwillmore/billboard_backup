@@ -16,4 +16,14 @@ class VisualizationsController < ApplicationController
       end
     end
   end
+
+  private
+
+  def visualizations_params
+    params[:use_flat_file] ||= use_flat_file
+    params[:year] ||= 1977
+    params[:chart_length] ||= 40
+
+    params
+  end
 end
