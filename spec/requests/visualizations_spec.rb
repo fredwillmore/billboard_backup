@@ -1,7 +1,11 @@
 require 'rails_helper'
 
-RSpec.describe "Visualizations", type: :request do
-  describe "GET /index" do
-    pending "add some examples (or delete) #{__FILE__}"
+describe "Visualizations" do
+  describe "GET /multi_line_chart" do
+    it "works right" do
+      get '/multi_line_chart'
+
+      expect(response).to be_successful
+    end
   end
 end
